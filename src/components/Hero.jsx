@@ -13,7 +13,7 @@ const profiles = [
   { name: "HackerRank", icon: <SiHackerrank />, link: "https://www.hackerrank.com/yandapallishrey1" },
   { name: "Codeforces", icon: <SiCodeforces />, link: "https://codeforces.com/profile/yandapallishreyas" },
   { name: "CodeChef", icon: <img src={CodeChefIcon} alt="CodeChef" className="cp-icon" />, link: "https://www.codechef.com/users/yandashreyas24" },
-  { name: "AtCoder", icon: <img src={AtCoderIcon} alt="AtCoder" className="cp-icon" />, link: "https://atcoder.jp/users/shreyasy" },
+  { name: "AtCoder", icon: <img src={AtCoderIcon} alt="AtCoder" className="cp-icon" />, link: "https://atcoder.jp/users/yandashreyas" },
 
 ];
 
