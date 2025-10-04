@@ -1,0 +1,96 @@
+/* -------------------- Leadership & Activities Section -------------------- */
+.tech-leadership-section {
+  text-align: center;
+  padding: 5rem 1rem;
+  color: white;
+  overflow: hidden;
+}
+
+/* Section Title */
+.tech-leadership-title {
+  font-size: 2.8rem;
+  margin-bottom: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.tech-leadership-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5, #c77dfd);
+  margin: 0.5rem auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Scrollable horizontal ticker */
+.tech-leadership-ticker {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.tech-ticker-track {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.tech-leadership-card {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 1.2rem 1.5rem;
+  margin-right: 1.5rem;
+  min-width: 200px;
+  max-width: 280px;
+  text-align: center;
+  flex-shrink: 0;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 15px rgba(37, 117, 252, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-leadership-card:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(37, 117, 252, 0.3),
+              0 4px 20px rgba(106, 17, 203, 0.25),
+              0 0 20px rgba(106, 17, 203, 0.5);
+}
+
+.tech-leadership-icon {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  margin-bottom: 0.8rem;
+}
+
+.tech-leadership-heading {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+  color: #e6e9ff;
+}
+
+.tech-leadership-desc {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #cfd4f9;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .tech-leadership-title { font-size: 2.2rem; }
+  .tech-leadership-card { min-width: 180px; max-width: 240px; padding: 1rem 1.2rem; }
+}
+
+@media (max-width: 768px) {
+  .tech-leadership-title { font-size: 1.8rem; }
+  .tech-leadership-card { min-width: 150px; max-width: 220px; margin-right: 1rem; }
+}
+
+@media (max-width: 400px) {
+  .tech-leadership-title { font-size: 1.6rem; }
+  .tech-leadership-card { min-width: 130px; max-width: 180px; padding: 0.8rem 1rem; margin-right: 0.8rem; }
+  .tech-leadership-heading { font-size: 0.95rem; }
+  .tech-leadership-desc { font-size: 0.8rem; }
+}

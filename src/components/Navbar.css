@@ -1,0 +1,97 @@
+/* Navbar Gradient */
+.navbar-gradient {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #0a192f, #112240, #1e3a8a, #3a3f7d);
+  background-size: 800% 800%;
+  animation: gradientBackground 15s ease infinite;
+  border-bottom: 2px solid transparent;
+  padding: 0.3rem 1rem;
+}
+
+/* Gradient animation */
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 50%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Brand/Header */
+.navbar-gradient .navbar-brand {
+  color: #00d2ff !important;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  display: flex;
+  gap: 8px;
+}
+
+/* Navbar links */
+.navbar-gradient .nav-link {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.4rem 0.8rem;
+  margin: 0.2rem 0.2rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: auto;
+}
+
+.navbar-gradient .nav-link:hover {
+  background: #00d2ff;
+  color: #0a192f !important;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 210, 255, 0.4);
+}
+
+/* Mobile adjustments */
+@media (max-width: 992px) {
+  .navbar-gradient .nav-link {
+    width: 100%; /* full width for mobile */
+    text-align: center;
+    margin: 0.3rem 0;
+  }
+
+  .navbar-gradient .navbar-collapse {
+    background: rgba(10, 25, 47, 0.95);
+    padding: 1rem;
+    border-radius: 12px;
+  }
+
+  .navbar-gradient .navbar-brand {
+    font-size: 1.2rem;
+    justify-content: center;
+  }
+
+  .navbar-gradient .navbar-nav {
+    margin-left: 0;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: stretch; /* make links full width */
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+  .navbar-gradient {
+    padding: 0.2rem 0.5rem;
+  }
+
+  .navbar-gradient .navbar-brand {
+    font-size: 1rem;
+    gap: 4px;
+    justify-content: center;
+  }
+
+  .navbar-gradient .nav-link {
+    font-size: 0.85rem;
+    padding: 0.3rem 0.6rem;
+  }
+}

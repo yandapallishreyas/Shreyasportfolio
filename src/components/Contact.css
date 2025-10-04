@@ -1,0 +1,175 @@
+/* -------------------- Contact Section -------------------- */
+.contact-section {
+  padding: 6rem 1rem;
+  color: white;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5, #c77dfd);
+  margin: 0.5rem auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Grid layout */
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual card */
+.contact-card {
+  flex: 1 1 220px;
+  max-width: 280px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(37, 117, 252, 0.4),
+              0 4px 20px rgba(106, 17, 203, 0.25),
+              0 0 15px rgba(106, 17, 203, 0.5);
+}
+
+/* Icon */
+.contact-icon {
+  font-size: 2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+  transform: scale(1.2);
+}
+
+/* Labels and values */
+.contact-label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #e6e9ff;
+}
+
+.contact-value {
+  font-size: 0.95rem;
+  color: #cfd4f9;
+  word-break: break-word;
+  line-height: 1.4;
+}
+
+/* -------------------- Responsive -------------------- */
+
+/* Large Tablets */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2.4rem;
+  }
+
+  .contact-card {
+    flex: 1 1 200px;
+    max-width: 240px;
+    padding: 1.8rem 1.2rem;
+  }
+
+  .contact-icon {
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+  }
+
+  .contact-label {
+    font-size: 1.1rem;
+  }
+
+  .contact-value {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small tablets & mobiles */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .contact-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .contact-card {
+    width: 85%;
+    max-width: 300px;
+    padding: 1.8rem 1rem;
+  }
+
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.6rem;
+  }
+
+  .contact-label {
+    font-size: 1.05rem;
+  }
+
+  .contact-value {
+    font-size: 0.9rem;
+  }
+}
+
+/* Small phones <= 400px */
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-card {
+    width: 90%;
+    padding: 1.5rem 0.8rem;
+  }
+
+  .contact-icon {
+    width: 45px;
+    height: 45px;
+    font-size: 1.4rem;
+  }
+
+  .contact-label {
+    font-size: 1rem;
+  }
+
+  .contact-value {
+    font-size: 0.85rem;
+  }
+}

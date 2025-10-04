@@ -1,0 +1,113 @@
+/* -------------------- Skills Section -------------------- */
+.techskills-section {
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* Section Title */
+.techskills-section-title {
+  font-size: 2.8rem;   /* match experience/project title */
+  text-align: center;
+  font-weight: normal;
+  margin: 1.5rem auto 3rem auto;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+}
+
+.techskills-section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5, #c77dfd);
+  margin: 0.5rem auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Skills Grid */
+.techskills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+/* Individual Skill Item */
+.techskills-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.techskills-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(95, 75, 255, 0.5);
+}
+
+.techskills-icon {
+  font-size: 3rem;
+  color: #2575fc; /* blue icons */
+  margin-bottom: 0.5rem;
+}
+
+.techskills-name {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+}
+
+/* -------------------- Responsive -------------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .techskills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+  .techskills-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .techskills-section-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .techskills-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .techskills-icon {
+    font-size: 2.5rem;
+  }
+
+  .techskills-name {
+    font-size: 0.95rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 400px) {
+  .techskills-section-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .techskills-icon {
+    font-size: 2rem;
+  }
+
+  .techskills-name {
+    font-size: 0.9rem;
+  }
+}
