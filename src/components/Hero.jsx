@@ -9,7 +9,7 @@ import "./Hero.css";
 import CodeChefIcon from "../assets/codechef.png";
 import AtCoderIcon from "../assets/atcoder.png";
 const profiles = [
-  { name: "LeetCode", icon: <SiLeetcode />, link: "https://leetcode.com/yandapallishreyas/" },
+  { name: "LeetCode", icon: <SiLeetcode />, link: "https://leetcode.com/yandashreyas24/" },
   { name: "HackerRank", icon: <SiHackerrank />, link: "https://www.hackerrank.com/yandapallishrey1" },
   { name: "Codeforces", icon: <SiCodeforces />, link: "https://codeforces.com/profile/yandapallishreyas" },
   { name: "CodeChef", icon: <img src={CodeChefIcon} alt="CodeChef" className="cp-icon" />, link: "https://www.codechef.com/users/yandashreyas24" },
