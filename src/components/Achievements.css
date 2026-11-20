@@ -1,0 +1,138 @@
+/* -------------------- Achievements Section -------------------- */
+.tech-achievements-section {
+  text-align: center;
+  color: white;
+  padding: 5rem 1.5rem;
+}
+
+/* Section Title */
+.tech-achievements-title {
+  font-size: 2.8rem;   /* match Experience/Projects titles */
+  margin-bottom: 3rem;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.tech-achievements-title::after {
+  content: "";
+  display: block;
+  width: 100px;  /* consistent underline with other sections */
+  height: 4px;
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5, #c77dfd);
+  margin: 0.5rem auto 0 auto;
+  border-radius: 2px;
+}
+
+/* Rows */
+.tech-achievements-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Achievement Card */
+.tech-achievement-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 300px;
+  max-width: 320px;
+}
+
+.tech-achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Emoji */
+.tech-achievement-emoji {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* Title */
+.tech-achievement-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #e6e9ff;
+  font-weight: 600;
+}
+
+/* Description */
+.tech-achievement-desc {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #cfd4f9;
+}
+
+/* -------------------- Responsive -------------------- */
+
+/* Tablets */
+@media screen and (max-width: 1024px) {
+  .tech-achievement-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+}
+
+/* Mobiles */
+@media screen and (max-width: 768px) {
+  .tech-achievements-section {
+    padding: 3rem 1rem;
+  }
+
+  .tech-achievements-title {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .tech-achievement-card {
+    flex: 1 1 80%;
+    max-width: 80%;
+    padding: 1.5rem;
+  }
+
+  .tech-achievement-title {
+    font-size: 1.1rem;
+  }
+
+  .tech-achievement-desc {
+    font-size: 0.9rem;
+  }
+
+  .tech-achievement-emoji {
+    font-size: 1.8rem;
+  }
+}
+
+/* Small Phones */
+@media screen and (max-width: 400px) {
+  .tech-achievements-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .tech-achievement-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .tech-achievement-title {
+    font-size: 1rem;
+  }
+
+  .tech-achievement-desc {
+    font-size: 0.85rem;
+  }
+
+  .tech-achievement-emoji {
+    font-size: 1.5rem;
+  }
+}

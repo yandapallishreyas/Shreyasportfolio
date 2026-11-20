@@ -1,0 +1,61 @@
+.about-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #0a192f, #112240, #1e3a8a);
+  color: #dce3f0;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  position: relative;
+}
+
+.about-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(90deg, #00d2ff, #1c4d92, #8e0de9);
+  margin-top: 0.5rem;
+  border-radius: 2px;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #e2e8f0; /* softer white for readability */
+}
+
+.highlight {
+  color: #00d2ff;
+  font-weight: 600;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 5px solid #3a7bd5;
+  box-shadow: 0 0 25px rgba(58, 123, 213, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.profile-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 35px rgba(199, 125, 253, 0.6);
+}
+
+/* Fade-in animations reused */
+.fade-in { opacity: 0; animation: fadeInUp 1s ease forwards; }
+.fade-in.delay-1 { animation-delay: 0.5s; }
+.fade-in.delay-2 { animation-delay: 1s; }
+.fade-in.delay-3 { animation-delay: 1.5s; }
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
